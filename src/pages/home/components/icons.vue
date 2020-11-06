@@ -1,7 +1,7 @@
 <template>
     
    
-    <div class="icons"> 
+    <div class="icons" :options="swiperOption"> 
         <swiper>
              <swiper-slide v-for="(page,index) of pages" :key="index">
         <div class="icon" v-for='item of page' :key="item.id">
@@ -20,8 +20,15 @@
 <script>
 export default {
     name: 'HomeIcons',
+    props:{
+        icon: Array
+
+    },
     data(){
         return{
+            swiperOption: {
+                autoplay: false
+            },
             iconList:[{
                 id: '0001',
                 imgUrl:'https://s.qunarzz.com/homenode/images/touchheader/hotel.png',
@@ -65,7 +72,7 @@ export default {
     computed:{
         pages(){
             const pages=[];
-            this.iconList.forEach((item,index)=> {
+            this.icon.forEach((item,index)=> {
                 const page=Math.floor(index/8)
                 if (!pages[page]){
                     pages[page]=[];
