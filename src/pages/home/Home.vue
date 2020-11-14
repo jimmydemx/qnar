@@ -29,7 +29,9 @@ export default {
     return {
       city: "",
       swiperList:[],
-      iconList:[]
+      iconList:[],
+      recommendList:[],
+      weekendList:[]
     }
     },
     
