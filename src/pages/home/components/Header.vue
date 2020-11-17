@@ -3,18 +3,22 @@
         <div class="header-left"><span class="iconfont">&#xe624;</span></div>
         <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
         <router-link to="/city">  
-        <div class="header-right">{{this.city}}<span class="iconfont tri">&#xe64a;</span></div>
+        <div class="header-right">{{this.doubleCity}}<span class="iconfont tri">&#xe64a;</span></div>
         </router-link>
     </div>
 </template>
 
 
 <script> 
+import {mapState, mapGetters} from 'vuex'
 export default {
     name: 'HomeHeader',
     props: {
         city: String
-
+    },
+    computed:{
+        ...mapState(['city']),
+        ...mapGetters(['doubleCity'])
     }
 }
 
@@ -33,7 +37,8 @@ export default {
         width: .64rem;
     }
     .header-right{
-        width: 1.24rem;
+        min-width: 1.04rem;
+        padding:.1rem;
         color :#FFF;
     }
     .header-input{

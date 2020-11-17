@@ -5,29 +5,30 @@
                 <div class="title border-topbottom">当前城市</div>
                 <div class="button-list">
                     <div class="button-wrapper">
-                        <div class="button">北京</div> 
-
+                        <div class="button">{{this.$store.state.city}}</div> 
                     </div>
                 </div>
             </div>
-
             <div class="area">
                 <div class="title border-topbottom">热门城市</div>
                     <div class="button-list">
-                        <div class="button-wrapper" v-for="item of hot" :key="item.id">
+                        <div class="button-wrapper" v-for="item of hot" :key="item.id"
+                        @click="handleCityClick(item.name)"
+                        >
                             <div class="button">{{item.name}}</div> 
                         </div>                   
                     </div>
-                </div>
             </div>
-            <div class="area1" v-for="(item,key1) of cities" :key="key1">
+            <div class="area1" v-for="(item,key1) of cities" :key="key1" :ref="key1">
                 <div class="title border-topbottom">{{key1}}</div>
                 <div class="item-list" v-for="innerItem of item" :key="innerItem.id">
-                    <div class="item border-bottom">{{innerItem.name}}</div>
+                    <div class="item border-bottom"
+                    @click="handleCityClick(innerItem.name)"
+                    >{{innerItem.name}}</div>
                 </div>
-                
             </div>
-    </div>
+         </div>   
+    </div>      
 </template>
 
 
@@ -37,17 +38,30 @@ export default {
     name:"CityList",
     props:{
         hot: Array,
-        cities: Object
-
-
-
+        cities: Object,
+        letter:String
     },
     mounted(){
         this.scroll=new Bscroll(this.$refs.wrapper);
-        console.log("cities=",this.cities)
-    }
-    
+        console.log("cities=",this.cities);
+    },
+    watch:{
+        letter(){
+            if (this.letter){
+                const element=this.$refs[this.letter][0];
+                console.log(element)
+                this.scroll.scrollToElement(element);
+            }
+                }   
+          },
+    methods:{
+        handleCityClick(city){
+            this.$store.dispatch("changeCity",city);
+            this.$router.push('/');
+            
+        }
 
+    }      
 }
 </script>
 
