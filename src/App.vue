@@ -1,7 +1,10 @@
 <template>
   <div id="app">
+      <keep-alive>
     <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+        <router-view/>
+      </keep-alive>
+
   </div>
 </template>
 
