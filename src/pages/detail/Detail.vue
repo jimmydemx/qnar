@@ -1,13 +1,20 @@
 <template>
+<div>
 <banner></banner>
+<DetailHeader></DetailHeader>
+<div class="content"></div>
+</div>
+
 </template>
 
 <script>
 import banner from './components/Banner.vue'
+import DetailHeader from './components/Header.vue'
 export default {
     name: 'DetailBanner',
      components:{
-        banner
+        banner,
+        DetailHeader
    }
     
 }
@@ -15,5 +22,8 @@ export default {
 
 
 <style lang="stylus" scoped>
+.content
+   height:50rem
+
 
 </style>
