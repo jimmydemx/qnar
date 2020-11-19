@@ -1,9 +1,9 @@
 <template>
 <div>
-<banner></banner>
+<banner :sightName='sightName' :bannerImg='bannerImg' :bannerImgs='gallaryImgs'></banner>
 <detail-header></detail-header>
-<div class="content">
-<detail-list :list="list"></detail-list>
+<div  class="content">
+<detail-list :list="alist"></detail-list>
 </div>
 </div>
 
@@ -13,15 +13,21 @@
 import banner from './components/Banner.vue'
 import DetailHeader from './components/Header.vue'
 import detailList from './components/List.vue'
+import axios from 'axios'
+
 export default {
     name: 'DetailBanner',
      components:{
         banner,
         DetailHeader,
-        detailList
+        detailList,
    },
    data(){
       return {
+         sightName:'',
+         bannerImg:'',
+         gallaryImgs:'',
+         alist:'',
          list:[
             {title:'成人票',
                children:[
@@ -39,6 +45,30 @@ export default {
             {title:'特惠票'}
          ]  
       }
+   },
+   methods:{
+      getDetailInfo(){
+         axios.get('/../../static/mock/detail.json?',{
+            params:{
+               id: this.$route.params.id
+            }
+         }).then(this.handleGetDataSucc)
+      },
+      handleGetDataSucc(res){
+         res=res.data
+         if(res.ret && res.data){
+            const data=res.data
+            console.log(data) 
+            this.sightName=data.sightName
+            this.bannerImg=data.bannerImg
+            this.gallaryImgs=data.gallaryImgs
+            this.alist=data.categoryList
+         }
+      }
+   },
+   mounted(){
+      this.getDetailInfo()
+
    }
     
 }
