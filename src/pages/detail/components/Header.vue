@@ -71,6 +71,7 @@ export default {
         color:#fff
         font-size: .4rem
 .header-fixed
+    z-index:2
     display:flex
     position:fixed
     top:0
