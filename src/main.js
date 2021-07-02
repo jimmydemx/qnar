@@ -3,6 +3,20 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import './assets/reset.css'
+import './assets/reset2/reset2.css'
+import './assets/border.css'
+import fastclick from 'fastclick'
+
+
+
+import {  Carousel,CarouselItem, } from 'element-ui';
+
+
+Vue.use(Carousel)
+Vue.use(CarouselItem)
+
+fastclick.attach(document.body)
 
 Vue.config.productionTip = false
 

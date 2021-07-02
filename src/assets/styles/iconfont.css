@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2165041 */
+  src: url('./iconfont/iconfont.woff2') format('woff2'),
+       url('./iconfont/iconfont.woff') format('woff'),
+       url('./iconfont/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconflighttain2:before {
+  content: "\e62e";
+}
+
+.iconsun:before {
+  content: "\e659";
+}
+
+.iconcar:before {
+  content: "\e66c";
+}
+
+.iconhotel:before {
+  content: "\e67e";
+}
+
+.iconshopping:before {
+  content: "\e89d";
+}
+
+.iconcreditcard-fill:before {
+  content: "\e860";
+}
+
+.iconticket:before {
+  content: "\e923";
+}
+
+.icondiamond:before {
+  content: "\e619";
+}
+
+.iconflight:before {
+  content: "\e957";
+}
+
+.iconHomehomepagemenu:before {
+  content: "\e9db";
+}
+
+.iconshoppingbag:before {
+  content: "\e608";
+}
+
+.iconfanhui1:before {
+  content: "\e64e";
+}
+
+.iconsearch:before {
+  content: "\e600";
+}
+
+.iconarrowdown:before {
+  content: "\e62b";
+}
+
+.iconjiantou:before {
+  content: "\e64a";
+}
+
+.iconfanhui:before {
+  content: "\e624";
+}
+
+.iconsousuo:before {
+  content: "\e632";
+}
+

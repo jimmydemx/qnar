@@ -1,0 +1,16 @@
+@charset "utf-8";
+:root{
+    box-sizing: border-box;
+    /* font-size:50px; */
+}
+*,::before,::after{
+    box-sizing: inherit;
+    margin: 0em;
+}
+
+body *+*{
+margin-top: 1.5em;
+}
+
+
+

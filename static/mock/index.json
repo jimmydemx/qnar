@@ -1,0 +1,74 @@
+{   "code":200,
+    "items_hot": [
+       {
+          "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/abfe690d-a57c-4dd3-8e77-f1b0e396775d.jpg_r_390x260x95_d5f078e2.jpg",
+          "title": "Li Lake ",
+          "subtitle": "the lake that takes your breath away,Click to discover what is here"
+       },
+       {
+          "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/fafe9394-8e5f-4ca9-b284-0cde9e516723.jpg_r_390x260x95_de847494.jpg",
+          "title": "Wedding",
+          "subtitle": "Have your splendid wedding here"
+       },
+        {
+            "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/2f72c5f0-a695-42ff-96ec-6932be6b2a00.jpg_r_390x260x95_944edb87.jpg",
+            "title": "Drum",
+            "subtitle": "Now dance with the beat of drum"
+        },
+        {
+            "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/9ef888c0-5965-446b-9a8f-63d1e92f45b1.jpg_r_390x260x95_6549707d.jpg",
+            "title": "Snow Mountain",
+            "subtitle": "Open your arms and embrace the mountain"
+        },
+        {
+            "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/14069e6b-4a3c-466c-874c-c9b29ceb1684.jpg_r_390x260x95_f3bf5db5.jpg",
+            "title": "Color ",
+            "subtitle": "Why not add some color to your life"
+        }
+    
+    ],   
+    "items_hiking": [
+        {
+           "num": 1,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/7d9b233c71cad13ded0013f9c9cec635.jpg",
+           "text": "Old Town"
+        },
+        {
+           "num": 2,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/fd16ccffb2e2376ff370bda3bebebd71.jpg",
+           "text": "Beaches"
+        },
+        {
+           "num": 3,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/c2ae82fcc9fa11fa253e5919c49bcfbf.jpg",
+           "text": "Park"
+        },
+        {
+           "num": 4,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/5a11974656794b4715156501be10c1b7.jpg",
+           "text": "Road of Village"
+        }
+     ],
+     "items_diving": [
+        {
+           "num": 1,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/729fced755d522ccfc280ef155f45518.jpg",
+           "text": "On the road to dive"
+        },
+        {
+           "num": 2,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/6ff48e0e00432f823bf593deec6d3397.jpg",
+           "text": "dive in grasses"
+        },
+        {
+           "num": 3,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-space/img/25ec051fa7d769f253ed25d653ebb49d.jpg_r_1360x1360x95_d29f9734.jpg",
+           "text": "Dive in trees"
+        },
+        {
+           "num": 4,
+           "img": "https://tr-osdcp.qunarzz.com/tr-osd-tr-space/img/ed052ca0e49f2f76e5d61dc2255cff16.jpg_r_1360x1360x95_0a76ec8d.jpg",
+           "text": "Dive with you love"
+        }
+     ]
+ }
